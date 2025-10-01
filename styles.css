@@ -1,0 +1,138 @@
+:root {
+    --emerald: #2ecc71;
+    --emerald-dark: #27ae60;
+    --white: #fff;
+    --gray-light: #f4f4f4;
+    --text-dark: #222;
+}
+
+body {
+    background: var(--gray-light);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--emerald);
+    color: var(--white);
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(44, 204, 113, 0.1);
+}
+
+header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    background: var(--emerald-dark);
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 2px 6px rgba(44, 204, 113, 0.08);
+}
+
+nav a:hover {
+    background: var(--white);
+    color: var(--emerald-dark);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 12px rgba(44, 204, 113, 0.15);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(44, 204, 113, 0.08);
+    padding: 2rem;
+}
+
+section h3 {
+    color: var(--emerald-dark);
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+footer {
+    background: var(--emerald-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-radius: 0 0 18px 18px;
+}
+
+footer nav {
+    gap: 1rem;
+}
+
+footer nav a {
+    background: var(--white);
+    color: var(--emerald-dark);
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+footer nav a:hover {
+    background: var(--emerald);
+    color: var(--white);
+    transform: scale(1.08);
+}
+
+/* Tabela estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: var(--gray-light);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(44, 204, 113, 0.07);
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background: var(--emerald);
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+tr {
+    transition: background 0.3s;
+}
+
+tr:hover {
+    background: var(--emerald);
+    color: var(--white);
+}
+
+td {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
