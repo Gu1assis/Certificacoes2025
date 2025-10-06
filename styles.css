@@ -14,6 +14,14 @@ body {
     padding: 0;
 }
 
+.criadores {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
 header {
     background: var(--emerald);
     color: var(--white);
